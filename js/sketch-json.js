@@ -77,9 +77,6 @@ var sketch = {
           "Interior": {
             "color": "white"
           },
-          "TextGObject_BackgroundContrast": {
-            "color": "rgb(113,81,48)"
-          },
           "ActionButton": {
             "color": "rgb(113,81,48)"
           }
@@ -187,6 +184,7 @@ var sketch = {
           "expression": "40 cm",
           "label": "Length",
           "style": {
+            "selectable": false,
             "precision": 0,
             "nameOrigin": "namedFromLabel",
             "contenteditable": true
@@ -327,6 +325,7 @@ var sketch = {
           },
           "constraint": "Segment",
           "style": {
+            "selectable": false,
             "line-style": "dotted",
             "width": 1
           }
@@ -356,6 +355,7 @@ var sketch = {
           },
           "constraint": "Segment",
           "style": {
+            "selectable": false,
             "line-style": "dotted",
             "width": 1
           }
@@ -369,6 +369,7 @@ var sketch = {
           },
           "constraint": "Segment",
           "style": {
+            "selectable": false,
             "line-style": "dotted",
             "width": 1
           }
@@ -382,6 +383,7 @@ var sketch = {
           },
           "constraint": "Segment",
           "style": {
+            "selectable": false,
             "line-style": "dotted",
             "width": 1
           }
@@ -402,6 +404,7 @@ var sketch = {
           },
           "image": 0,
           "style": {
+            "selectable": false,
             "opacity": 1,
             "layerOrder": 1
           }
@@ -416,7 +419,10 @@ var sketch = {
               "y": -1
             }
           },
-          "textMFS": "<VL<T'Cut the String'>>"
+          "textMFS": "<VL<T'Cut the String'>>",
+          "style": {
+            "selectable": false
+          }
         },
         "20": {
           "kind": "Picture",
@@ -773,6 +779,9 @@ var sketch = {
             }
           },
           "label": "+",
+          "style": {
+            "selectable": false
+          },
           "constraint": "ActionButtonMove",
           "messages": [
             "+"
@@ -793,6 +802,9 @@ var sketch = {
             }
           },
           "label": "\u2013",
+          "style": {
+            "selectable": false
+          },
           "constraint": "ActionButtonMove",
           "messages": [
             "\u2013"
@@ -818,6 +830,7 @@ var sketch = {
           "expression": "@0+@1*@2",
           "label": "Cuts",
           "style": {
+            "selectable": false,
             "color": "rgb(113,81,48)",
             "precision": 0,
             "nameOrigin": "namedFromLabel"
@@ -1006,6 +1019,7 @@ var sketch = {
           "constraint": "PictureCenteredOnOnePoint",
           "image": 2,
           "style": {
+            "selectable": false,
             "opacity": 1,
             "layerOrder": 4
           }
@@ -1053,6 +1067,7 @@ var sketch = {
           },
           "constraint": "IterateImage",
           "style": {
+            "selectable": false,
             "color": "rgb(192,133,74)",
             "line-style": "solid",
             "width": 3
@@ -1110,6 +1125,9 @@ var sketch = {
             }
           },
           "label": "Cut",
+          "style": {
+            "selectable": false
+          },
           "constraint": "ActionButtonPresentSequentially",
           "messages": [
             "Cut"
@@ -1130,6 +1148,9 @@ var sketch = {
             }
           },
           "label": "Reset Scisssors",
+          "style": {
+            "selectable": false
+          },
           "constraint": "ActionButtonMove",
           "messages": [
             "Reset Scisssors"
